@@ -8,10 +8,26 @@ var insertX = ["Willy the Goblin", "Big Daddy", "Father Christmas"];
 var insertY = ["the soup kitchen", "Disneyland", "the Whit House"];
 var insertZ = ["spontaneously combusted", "melted into a puddle on the sidewalk", "turned into a slug and crawled away"];
 
-
-
 function randomValueFromArray(array){
   const random = Math.floor(Math.random()*array.length);
   return array[random];
 }
 
+randomize.addEventListener('click', result);
+
+function result() {
+
+  if(customName.value !== '') {
+    let name = customName.value;
+
+  }
+
+  if(document.getElementById("uk").checked) {
+    let weight = Math.round(300);
+    let temperature =  Math.round(94);
+
+  }
+
+  story.textContent = ;
+  story.style.visibility = 'visible';
+}
