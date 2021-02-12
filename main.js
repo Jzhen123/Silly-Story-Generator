@@ -27,19 +27,20 @@ function result() {
   var zItem = randomValueFromArray(insertZ);
    
   newStory = newStory.replace(":insertx:", xItem);
+  newStory = newStory.replace(":insertx:", xItem);
   newStory = newStory.replace(":inserty:", yItem);
   newStory = newStory.replace(":insertz:", zItem);
 
   if(customName.value !== '') {
     let name = customName.value;
-    newStory.replace("Bob", name);
+    newStory = newStory.replace("Bob", name);
   }
 
   if(document.getElementById("uk").checked) {
     let weight = Math.round(300 * 0.07142,' stone');
     let temperature =  Math.round((94-32) * (5/9), ' centigrade');
-    newStory.replace("94 fahrenheit", temperature);
-    newStory.replace("300 pounds", weight);
+    newStory = newStory.replace("94 fahrenheit", temperature);
+    newStory = newStory.replace("300 pounds", weight);
   }
 
   story.textContent = newStory;
