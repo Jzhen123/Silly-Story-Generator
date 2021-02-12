@@ -38,9 +38,10 @@ function result() {
   if(document.getElementById("uk").checked) {
     let weight = Math.round(300 * 0.07142,' stone');
     let temperature =  Math.round((94-32) * (5/9), ' centigrade');
-
+    newStory.replace("94 fahrenheit", temperature);
+    newStory.replace("300 pounds", weight);
   }
 
-  story.textContent = ;
+  story.textContent = newStory;
   story.style.visibility = 'visible';
 }
