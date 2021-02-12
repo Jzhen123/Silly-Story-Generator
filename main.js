@@ -21,10 +21,12 @@ function randomValueFromArray(array){
 randomize.addEventListener('click', result);
 
 function result() {
-  var xItem = randomValueFromArray();
-  var yItem = randomValueFromArray();
-  var zItem = randomValueFromArray();
   var newStory = storyText;
+  var xItem = randomValueFromArray(insertX);
+  var yItem = randomValueFromArray(insertY);
+  var zItem = randomValueFromArray(insertZ);
+   
+  newStory.replace(":insertx:", xItem)
 
   if(customName.value !== '') {
     let name = customName.value;
