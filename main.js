@@ -8,10 +8,6 @@ var insertX = ["Willy the Goblin", "Big Daddy", "Father Christmas"];
 var insertY = ["the soup kitchen", "Disneyland", "the Whit House"];
 var insertZ = ["spontaneously combusted", "melted into a puddle on the sidewalk", "turned into a slug and crawled away"];
 
-
-
-
-
 function randomValueFromArray(array){
   const random = Math.floor(Math.random()*array.length);
   return array[random];
