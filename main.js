@@ -27,12 +27,12 @@ function result() {
   var zItem = randomValueFromArray(insertZ);
    
   newStory.replace(":insertx:", xItem) = newStory;
-  newStory.replace(":inserty:", xItem) = newStory;
-  newStory.replace(":insertz:", xItem) = newStory;
-  
+  newStory.replace(":inserty:", yItem) = newStory;
+  newStory.replace(":insertz:", zItem) = newStory;
+
   if(customName.value !== '') {
     let name = customName.value;
-
+    newStory.replace("Bob", name);
   }
 
   if(document.getElementById("uk").checked) {
